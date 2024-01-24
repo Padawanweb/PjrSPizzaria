@@ -6,24 +6,52 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Js Simções Pizzaria</title>
+    <script src="https://kit.fontawesome.com/fcc381a96a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header class="topo">
         <h1 class="topo__marca" >JS Pizzas
-            <span class="topo__titulo" >Menu</span>
+            <span class="topo__titulo">Menu</span>
         </h1>
     </header>
-    <main>
+    <main class="conteudo">
         <section class="pizzas-cards">
             <div class="pizzas-cards__item">
-                <img src="" alt="" class="pizzas-cards__img">
+                <img src="img/img-produto01.png" alt="" class="pizzas-cards__img">
+                <a href="#modal" class="pizzas-cards__btn-add"></a>
+                <span class="fa-solid fa-circle-plus"></span></span>
+                <span class="pizzas-cards__preco">R$ 99,99</span>
+                <span class="pizzas-cards__titulo">Título</span>
+                <p class="pizzas-cards__texto">Dois hamburgueres, alface, queijo, molho...</p>
+            </div>
+            <div class="pizzas-cards__item">
+                <img src="img/img-produto01.png" alt="" class="pizzas-cards__img">
+                <a href="#modal" class="pizzas-cards__btn-add"></a>
+                <span class="fa-solid fa-circle-plus"></span></span>
+                <span class="pizzas-cards__preco">R$ 99,99</span>
+                <span class="pizzas-cards__titulo">Título</span>
+                <p class="pizzas-cards__texto">Dois hamburgueres, alface, queijo, molho...</p>
+            </div>
+            <div class="pizzas-cards__item">
+                <img src="img/img-produto01.png" alt="" class="pizzas-cards__img">
+                <a href="#modal" class="pizzas-cards__btn-add"></a>
+                <span class="fa-solid fa-circle-plus"></span></span>
+                <span class="pizzas-cards__preco">R$ 99,99</span>
+                <span class="pizzas-cards__titulo">Título</span>
+                <p class="pizzas-cards__texto">Dois hamburgueres, alface, queijo, molho...</p>
+            </div>
+            <div class="pizzas-cards__item">
+                <img src="img/img-produto01.png" alt="" class="pizzas-cards__img">
+                <a href="#modal" class="pizzas-cards__btn-add"></a>
+                <span class="fa-solid fa-circle-plus"></span></span>
                 <span class="pizzas-cards__preco">R$ 99,99</span>
                 <span class="pizzas-cards__titulo">Título</span>
                 <p class="pizzas-cards__texto">Dois hamburgueres, alface, queijo, molho...</p>
             </div>
         </section>
-
+        <!-- Carrinho para finalizar a compra -->
         <aside class="carrinho">
             <h1 class="carrinho__titulo">Suas Pizzas</h1>
             <div class="carrinho__item">
@@ -40,19 +68,53 @@
 
     </main>
 
-
+    <!-- rodapé da pag -->
     <footer class="rodape">
         <address class="rodape__endereco">
-            Rua das Margaridas, 25 Centro São Paulo SP
+            Rua das Margaridas, 25 
+            <br> Centro São Paulo SP
         </address>
-        <div class="rodape__desenvolvedor">
-            Desenvolvido por XPTO Soluções Digitais
-        </div>
         <div class="rodape__redes-sociais">
-            <img src="" alt="" class="rodape__logo-face">
-            <img src="" alt="" class="rodape__logo-whatsapp">
-            <img src="" alt="" class="rodape__logo-insta">
+            <span class="fa-brands fa-whatsapp"></span>
+            <span class="fa-brands fa-facebook"></span>
+            <span class="fa-brands fa-instagram"></span>
+            <!-- <img src="" alt="" class="rodape__logo-face">
+                <img src="" alt="" class="rodape__logo-whatsapp">
+                <img src="" alt="" class="rodape__logo-insta"> -->
+            </div>
+        <div class="rodape__desenvolvedor">
+        Desenvolvido por XPTO Soluções Digitais
         </div>
-    </footer>
+        </footer>
+
+        <div id="modal" class="background-modal">
+            <div class="modal-pizza">
+                <img src="./img/img-produto01.png" alt="Image da Pizza Mozzarella" class="modal-pizza__img">
+                <div class="modal-pizza__detalhes">
+                    <a href="#" class="modal-pizza__btn-fechar" >Voltar</a>
+                    <h1 class="modal-pizza__tx-titulo"> Sabor da Pizza</h1>
+                    <div class="modal-pizza__tx-ingredientes">Lorem ipsum ingredientius</div>
+                    <div class="modal-pizza__tx-tamanho">Tamanho</div>
+                    <div class="modal-pizza__controle-tamanhos">
+                        <div class="modal-pizza__tamanho">Pequena <span>320g</span></div>
+                        <div class="modal-pizza__tamanho">Média <span>530g</span></div>
+                        <div class="modal-pizza__tamanho">Grande <span>860g</span></div>
+                    </div>
+                    <div class="modal-pizza__tx-preco">Preço</div>
+                    <div class="modal-pizza__qtd">
+                        <div class="modal-pizza__tx-valor">R$ 99,99</div>
+                        <div class="modal-pizza__controle-qtd">
+                            <button class="modal-pizza__menos">-</button>
+                            <div class="modal-pizza__tx-valor">1</div>
+                            <button class="modal-pizza__mais">+</button>
+                        </div>
+                    </div>
+                    <div class="modal-pizza__btns">
+                        <button class="modal-pizza__btn modal pizza__btn--adicionar">Adicionar ao carrinho</button>
+                        <button class="modal-pizza__btn modal-pizza__btn--cancelar">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

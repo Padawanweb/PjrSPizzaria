@@ -1,0 +1,149 @@
+:root {
+    --preset--color--black: #000000;
+    --preset--color--dark-gray: #D9D9D9;
+    --preset--color--light-gray: #EEEEEE;
+    --preset--color--white: #ffffff;
+    --preset--color--baby-blue: #E5F4FF;
+    --preset--color--blue: #1298F8;
+    --preset--color--green: #48D05F; 
+    --preset--color--red: #E92929; 
+}
+
+/* fontes */
+@font-face{
+     font-family: "InterBold";
+     src: url(../fontes/Inter-Bold.ttf);
+}
+
+@font-face{
+    font-family: "InterRegular";
+    src: url(../fontes/Inter-Regular.ttf);
+}
+
+@font-face{
+    font-family: "InterLight";
+    src: url(../fontes/Inter-Light.ttf);
+}
+
+/* topo - header */
+
+.topo{
+    
+    font-size: 1.5rem;
+    background-color:var(--preset--color--baby-blue);
+    display: flex;
+    color:var(--preset--color--black);
+    justify-content: center;
+    font-family: "InterBold";
+    height: 136px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.topo__titulo{
+    color: var(--preset--color--blue);
+}
+
+.pizzas-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 104px;
+}
+
+.pizzas-cards__item{
+font-family: "InterBold";
+display: flex;
+width: 349px;
+height: 556px;
+padding: 128px 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+border-radius: 35px;
+background: #FFF;
+box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fa-circle-plus{
+    position: relative;
+    top: -40px;
+    font-size: 2.5rem;
+    color: var(--preset--color--blue);
+}
+
+.background-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.modal-pizza{
+    display: inline-flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.modal-pizza__detalhes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    
+}
+
+.modal-pizza__controle-tamanhos{
+display: flex;
+padding: 8px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+border-radius: 16px 16px 16px 16px;
+background: var(--preset--color--blue);
+}
+
+.modal-pizza__tx-titulo{
+    font-family: "InterBold";
+    font-size: 24px;
+}
+
+.modal-pizza__tx-ingredientes{
+    font-family: "InterLight";
+    font-size: 16px;
+}
+
+.modal-pizza__tx-tamanho{
+    text-transform: uppercase;
+    font-family: "InterRegular";
+    font-size: 16px;
+}
+
+.modal-pizza__tamanho{
+text-transform: uppercase;
+font-family: "InterBold";
+padding: 8px;
+font-size: 24px;
+}
+
+.modal-pizza__tx-preco{
+    text-transform: uppercase;
+    font-family: "InterRegular";
+    font-size: 16px;
+}
+
+.modal-pizza__tx-valor{
+    font-family: "InterBold";
+    font-size: 24px;
+}
